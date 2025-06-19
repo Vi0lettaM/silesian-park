@@ -1,0 +1,621 @@
+ *{
+    font-family: 'Open Sans Bold', arial;
+    font-size: 20px;
+    margin: 0;               
+}
+
+nav {
+    text-align: center;
+    background: #7a9e55;
+    color: white;
+    width: 1012.67;
+    padding: 1rem;
+}
+
+nav.sticky {
+    position: absolute;
+    left: 0;
+    transition: none;
+    padding: 0.3rem;
+}
+
+#nav a, a:visited {
+    text-decoration: none;
+    color: white;    
+    padding: 0;
+}
+ 
+#nav a:hover {
+    color: rgb(208, 204, 204);
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;   
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px ;  
+    display: block;
+}
+
+ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+}
+
+ol>li {
+    float: left;
+    width: 270px;
+    height: 40px;
+    border-right: 1px solid #ffffff;
+}
+
+ol>li:first-child {
+    border-left: 1px solid #ffffff;
+}
+
+ol>li:hover {
+    background-color: #688c43;
+}
+
+ol>li:hover>a {
+    color: #451717;
+}
+
+ol>li>ul {
+    list-style-type: none;    
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+
+ol>li>ul>li {
+    background-color: #688c43;
+    position: relative;
+    z-index: 100;
+    border-top: 1px solid #ffffff;
+}
+
+ol>li>ul>li:hover {
+    background-color: #475f2f;
+}
+
+ol>li:hover>ul {
+    display: block;
+}
+
+.head {
+    position: relative;
+    text-align: center;
+    color: rgb(253, 253, 253);
+}
+
+.head-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.headOfPhotos {
+    width: 100%;    
+} 
+
+.headline {
+    font-size: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px; 
+    text-shadow: 4px 4px 4px #131313;
+}
+
+html {
+    background-image: url(/images/tlo.jpg);    
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content{
+    width: 1160px;
+    height: 1800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    background: rgba(239, 244, 242, 0.863);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.61),
+            0 14px 28px rgb(0, 0, 0, 0.61),
+            0 14px 28px rgb(0, 0, 0, 0.61),
+            0 14px 28px rgb(0, 0, 0, 0.61);
+} 
+
+.icon-parent {
+    position: relative;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    vertical-align: middle;
+}
+
+h2 {
+    padding-left: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #7a9e55;
+}
+
+.ParagraphsAndPhotos {
+    display: flex;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+.photos-in-paragraph {    
+    width: 500px;
+    height: 350px;
+}
+
+#firstImg-1 {
+    float: right;    
+    margin-left: 25px;   
+}
+
+.figure {
+    overflow: hidden;
+    text-align: center;
+    width: 3500px;
+    height: 350px;
+    margin-left: 25px;
+}
+
+#firstImg-1, #thirdImg-1 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#firstImg-1:hover, #thirdImg-1:hover {
+    transition: 1s;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.press-list {
+    width: 640px;
+    height: 360px;
+    margin-right: 25px;
+}
+
+.press {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    width: 640px;
+    height: 360px;
+    display: flex;
+}
+
+.press-item {
+    list-style: none;
+    width: 25%;
+    background: url(images/lokacja.jpg);
+    background-size: cover;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.press:hover .press-item:nth-child(odd) {
+    transform: skewY(15deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+}
+
+.press:hover .press-item:nth-child(even) {
+    transform: skewY(-15deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+}
+
+.press .press-item:nth-child(1) {
+    background-position: 0;
+}
+
+.press .press-item:nth-child(2) {
+    background-position: -160px;
+}
+
+.press .press-item:nth-child(3) {
+    background-position: -320px;
+}
+
+.press .press-item:nth-child(4) {
+    background-position: -480px;
+}
+
+#thirdImg-1 {
+    float: right;
+    margin-left: 25px;    
+}
+
+.list-parkInNumbers {
+    list-style-image: url(images/icon-checkbox.png);
+    line-height: 50px;
+    margin-bottom: 300px;
+}
+
+.list-attractionsInPark{
+    list-style-image: url(images/icon-check-atrakcje.png);    
+    margin-left: 30px;    
+    margin-bottom: 300px;       
+} 
+
+
+
+
+
+
+
+
+
+ .content1 {    
+    height: 3750px;
+    padding-top: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    background: rgba(239, 244, 242, 0.863); 
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.61),
+                0 14px 28px rgb(0, 0, 0, 0.61),
+                0 14px 28px rgb(0, 0, 0, 0.61),
+                0 14px 28px rgb(0, 0, 0, 0.61);
+} 
+
+h1.podstrona1 {
+    font-size: 32px;
+    font-weight: 400;        
+    text-transform: uppercase;    
+    color: #7a9e55;
+}
+
+h2.podstrona1 {
+    font-size: 16px;
+    font-weight: 200;    
+    margin-bottom: 30px;
+    text-transform: none;
+    color: #7a9e55;
+}
+
+.container-images {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 25px;
+    border: 1px black;
+}
+
+.postcard {
+    display: inline-block;
+    width: 381px;
+    text-align: center;
+    padding-bottom: 15px;    
+}
+
+.postcard p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.postcard img {
+    width: 380px;
+    height: 280px;
+}
+
+/* Hover effects */
+
+.photo1 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(116, 112, 112);
+}
+
+.photo1 img {
+    transition: all .5s ease-in-out;
+}
+
+.photo1:hover img {
+    transform: scale(1.15);
+}
+
+.photo2 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(116, 112, 112);
+}
+
+.photo2 img {
+    transition: all .5s ease-in-out;
+}
+
+.photo2:hover img {
+    transform: scale(1.15);
+}
+
+.photo3 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(116, 112, 112);
+}
+
+.photo3 img {
+    transition: all .5s ease-in-out;
+}
+
+.photo3:hover img {
+    transform: scale(1.15);
+}
+
+.photo4 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(116, 112, 112);
+}
+
+.photo4 img {
+    transition: all .5s ease-in-out;
+}
+
+.photo4:hover img {
+    transform: scale(1.15);
+}
+
+.photo5 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(116, 112, 112);
+}
+
+.photo5 img {
+    transition: all .5s ease-in-out;
+}
+
+.photo5:hover img {
+    transform: scale(1.15);
+}
+
+.photo6 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(116, 112, 112);
+}
+
+.photo6 img {
+    transition: all .5s ease-in-out;
+}
+
+.photo6:hover img {
+    transform: scale(1.15);
+}
+
+.content1-paragraphs {    
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+
+.ParagraphsAndPhotos-ul{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+ul.rose {
+    margin-left: 525px;
+    list-style-type: circle;
+}
+
+.ParagraphsAndPhotos-ul2 {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+#firstImg {
+    float: right;
+    margin-left: 15px;
+}
+
+#secondImg {
+    float: left;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+.content2 {
+    height: 3500px;
+    padding-top: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: rgba(239, 244, 242, 0.863);
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.61),
+        0 14px 28px rgb(0, 0, 0, 0.61),
+        0 14px 28px rgb(0, 0, 0, 0.61),
+        0 14px 28px rgb(0, 0, 0, 0.61);
+}
+
+h1.podstrona2 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7a9e55;
+    padding-bottom: 15px;
+}
+
+li span {
+    font-weight: bolder;
+}
+
+hr {
+    margin: 50px;
+}
+
+ul.zrodla a {
+    text-decoration: none;
+    color: rgb(47, 109, 170);
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+ul.zrodla a:hover {
+    text-decoration: underline;    
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+ul.zrodla a:visited {
+    color: rgb(119, 66, 108);
+}
+
+
+
+
+
+
+
+
+
+footer {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9115248394279587) 0%, rgba(16, 74, 9, 0.9311326825652135) 53%, rgba(122, 158, 85, 0.9311326825652135) 100%);
+}
+
+.icon-footer img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+.information-footer, .contacts-footer, .social-media-footer {
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 50px;
+    margin-right: 100px;    
+    line-height: 2em;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;    
+}
+
+footer a:hover {
+    color: rgb(11, 116, 181);
+}
+
+p img {
+    margin-right: 10px;
+}
+
+.social-media-footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.social-media-footer li {
+    display: inline;
+}
+
+.social-media-footer img {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.social-media-footer img:hover {    
+    width: 36px;
+    height: 36px;
+}
+
+
+
+
+
+article {
+    text-align: center;
+    background-color: #131313;
+    color: #ffffff;
+    padding: 10px;    
+}
+
+article p {
+    font-size: 10px;
+}
+
+article img {
+    margin-right: 2px;
+}
+
+.contacts-footer > p:hover, img:hover {
+    color: rgb(11, 116, 181);
+}
