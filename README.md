@@ -26,6 +26,19 @@ Projekt pokazuje praktyczne zastosowanie wiedzy zdobytej w technikum, m.in.:
 ## 🔗 Demo (GitHub Pages)
 
 👉 [Zobacz stronę online](https://vi0lettam.github.io/silesian-park/)  
+*(Wstaw tutaj свой настоящий линк после загрузки)*
 
 ## 📂 Struktura projektu
+silesian-park/
+├── index.html ← Strona główna
+├── style.css ← Style CSS
+├── images/ ← Folder z obrazkami
+│ ├── park1.jpg
+│ ├── park2.jpg
+│ └── ...
+├── README.md ← Opis projektu
 
+## ✍️ Autor
+Projekt wykonany przez: Vi0lettaM  
+Rok: 2023 
+Szkoła: Technikum nr 8 w Sosnowcu
