@@ -25,8 +25,7 @@ Projekt pokazuje praktyczne zastosowanie wiedzy zdobytej w technikum, m.in.:
 
 ## 🔗 Demo (GitHub Pages)
 
-👉 [Zobacz stronę online](https://vi0lettam.github.io/silesian-park/)  
-*(Wstaw tutaj свой настоящий линк после загрузки)*
+👉 [Zobacz stronę online](https://vi0lettam.github.io/silesian-park/) 
 
 ## 📂 Struktura projektu
 silesian-park/
